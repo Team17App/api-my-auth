@@ -33,7 +33,7 @@ paths:
                 deviceToken: {type: string}
                 title: {type: string}
                 body: {type: string}
-                data: {type: array, items: {type: string}}
+                data: {type: json, items: {type: string}}
       responses:
         200:
           description: Notificación enviada.
