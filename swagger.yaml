@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: Firebase Auth & Push API
+  version: 1.0.0
+  description: API minimalista para autenticación y notificaciones.
+paths:
+  /api/auth/register:
+    post:
+      summary: Registrar un nuevo usuario
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: {type: string}
+                password: {type: string}
+                name: {type: string}
+      responses:
+        201:
+          description: Usuario creado.
+  /api/notify:
+    post:
+      summary: Enviar Notificación Push
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                deviceToken: {type: string}
+                title: {type: string}
+                body: {type: string}
+      responses:
+        200:
+          description: Notificación enviada.

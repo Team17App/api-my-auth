@@ -1,0 +1,9 @@
+body { font-family: 'Segoe UI', sans-serif; background: #eceff1; display: flex; justify-content: center; padding: 20px; }
+.container { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); width: 450px; }
+h1 { color: #202124; font-size: 1.5rem; text-align: center; }
+input, button, textarea { width: 100%; margin-bottom: 12px; padding: 12px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; }
+.google-btn { background: #4285f4; color: white; border: none; cursor: pointer; font-weight: 600; }
+.primary-btn { background: #1a73e8; color: white; border: none; cursor: pointer; }
+.secondary-btn { background: #f1f3f4; color: #3c4043; border: 1px solid #dadce0; cursor: pointer; font-size: 0.8rem; }
+.response-box { background: #202124; color: #00ff00; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 0.85rem; overflow-x: auto; white-space: pre-wrap; margin-top: 15px; }
+.user-card { background: #e8f0fe; padding: 10px; border-radius: 8px; text-align: center; margin-bottom: 10px; }

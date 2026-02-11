@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Firebase Admin Panel</title>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Firebase API Test</h1>
+        
+        <section id="auth-section">
+            <h3>Autenticación</h3>
+            <button id="googleLoginBtn" class="google-btn">Iniciar sesión con Google</button>
+            <div id="userInfo" class="user-card" style="display:none">
+                <p id="userName"></p>
+                <button onclick="logout()">Cerrar Sesión</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Enviar Push con Payload</h3>
+            <input type="text" id="pushToken" placeholder="FCM Device Token">
+            <input type="text" id="pushTitle" placeholder="Título">
+            <input type="text" id="pushBody" placeholder="Cuerpo del mensaje">
+            
+            <h4>Lista de elementos (Payload):</h4>
+            <div id="payloadList">
+                <input type="text" class="payload-item" placeholder="Elemento 1">
+            </div>
+            <button type="button" onclick="addPayloadField()" class="secondary-btn">+ Añadir más</button>
+            
+            <button onclick="sendPush()" class="primary-btn">Enviar Notificación</button>
+        </section>
+
+        <div id="response" class="response-box">Respuesta del servidor...</div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
